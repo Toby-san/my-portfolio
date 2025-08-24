@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        scroll-behavior: smooth ;
+}
+
+:root {
+    --leftbgcolor: #222;
+    --rightbgcolor: black;
+    
+}
+
+body {
+    width: 100%;
+    color: white;
+    background-color: black;
+
+}
+
+.maindiv {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.navbar {
+    /* min-width: 2%;
+    background-color: var(--leftbgcolor);
+    height: 100vh;
+    position: sticky;
+    top: 0; */
+
+    max-width: 8%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: var(--leftbgcolor);
+    cursor: pointer;
+}
+
+.content-container {
+    width: 100%;
+    background-color: var(--rightbgcolor);
+    justify-content: end;
+}
+
+/* Navgation */
+
+
+.Nav .navbutton {
+    color: white;
+    width: 100%;
+    display: block;
+    padding: 20px 5px 20px 5px;
+    text-align: center;
+    font-size: 12px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+
+.logo img {
+    width: 100%;
+    display: block;
+}
+
+
+.navbutton p {
+    width: 100%;
+
+}
+
+.navbutton i {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.navbutton:hover  {
+    background-color: var(--rightbgcolor);
+}
+
+.content-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+/* Hero Section */
+
+
+
+
+.header-container {
+    margin-bottom: 30px;
+}
+
+
+
+.image-container {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-container img {
+    width: 80%;
+}
+
+.header-container h1 {
+    margin-bottom: 30px;
+}
+
+.header-container h1 span {
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+/* About Me */
+.biography {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.biography h1 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-left: 20px;
+}
+
+.biography p {
+    text-align: justify;
+    margin: 20px;
+    line-height: 30px;
+    color: rgb(154, 153, 153);
+}
+
+/* skill */
+.skill-container {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+}
+
+.skill-container h1 {
+    text-align: left;
+    margin: 20px;
+}
+
+.skillrate {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.skillrate p,
+.skillrate div {
+    text-align: left;
+}
+
+.html {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, gray 100%, white 0%);
+    margin-bottom: 40px;
+}
+
+.css {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, gray 100%, white 0%);
+    margin-bottom: 40px;
+}
+
+.javascript {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, gray 90%, white 10%);
+    margin-bottom: 40px;
+}
+
+.bootstrap {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, gray 95%, white 5%);
+    margin-bottom: 40px;
+}
+
+.ui-ux {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, gray 70%, white 30%);
+    margin-bottom: 40px;
+}
+
+/* Skill Box */
+
+.skillbox {
+    margin: auto;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.box-container {
+    background-color: rgb(255, 255, 255);
+    margin: 0px 0px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container div {
+    width: 25%;
+    padding: 50px;
+    color: black;
+}
+
+.box-container div p {
+    font-size: 20px;
+}
+
+.resume {
+    width: fit-content;
+    background-color: rgb(255, 253, 253);
+    margin: 20px;
+}
+
+.resume a {
+    display: flex;
+    margin: 0px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.resume i {
+    margin-right: 5px;
+    color: black;
+}
+
+.resume a:hover {
+    background-color: #c3c2c2;
+}
+
+/* My Price */
+
+.myprice {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.myprice-header {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.price-container {
+    width: 100%;
+    display: flex;
+    margin: 30px 20px 0px 20px;
+}
+
+.basic {
+    width: 50%;
+    background-color: rgb(169, 167, 167);
+    margin-right: 10px;
+}
+
+
+.pro {
+    width: 50%;
+    margin-left: 10px;
+    background-color: rgb(169, 167, 167);
+    transition: 0.5s;
+}
+
+.basic:hover,
+.pro:hover {
+    background-color: rgb(210, 210, 210);
+
+}
+
+.myprice-container {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgb(147, 146, 146);
+    line-height: 30px;
+    color: black;
+
+}
+
+.myprice-container1 {
+    width: 100%;
+    background-color: #636262;
+    padding: 30px;
+    color: black;
+    border: 1px solid rgb(147, 146, 146);
+}
+
+.data-header {
+    color: white;
+    font-weight: 200;
+}
+
+.myprice .myprice-container button {
+    padding: 10px;
+}
+
+.myprice-container p span {
+    font-size: 35px;
+}
+
+.myprice-container button {
+    border: transparent;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.myprice-container button:hover {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+/* My Rputation */
+
+.reputation {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.reputation h1 {
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.partaner {
+    display: flex;
+    margin-top: 30px;
+}
+
+.partaner img {
+    width: 10%;
+    border-radius: 50%;
+    margin: 20px;
+    min-width: 100px;
+}
+
+.partaner p {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+/* My photo */
+
+.myphoto {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.myphoto h1 {
+    min-width: 20%;
+    padding-bottom: 20px;
+    margin: 30px 20px 40px 20px;
+    border-bottom: white 1px solid;
+}
+
+.myphotolist {
+    display: flex;
+}
+
+.leftphoto {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.rightphoto {
+    width: 50%;
+    margin: 0px 20px 30px 20px;
+}
+
+.leftphoto img,
+.rightphoto img {
+    margin: 3px 0px 3px 0px;
+}
+
+/* Footer */
+
+.footer {
+    width: 80%;
+    text-align: left;
+    margin: auto;
+}
+
+.footer h1 {
+    min-width: 20%;
+    border-bottom: white 1px solid;
+    margin: 20px 20px 30px 20px;
+}
+
+.location-phone-email p i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: white;
+}
+
+.location-phone-email {
+    margin-left: 25px;
+}
+
+.location-phone-email p {
+    font-size: 20px;
+    color: gray;
+    margin: 40px 0px 30px 0px;
+}
+
+.form {
+    margin-left: 20px;
+}
+
+.form p {
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 15px;
+}
+
+.form input {
+    width: 100%;
+    padding: 20px 20px 20px 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.form button {
+    padding: 20px 35px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.form button i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.form button:hover {
+    background-color: rgb(178, 177, 177);
+}
+
+.social {
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.social p i {
+    font-size: 25px;
+    color: #636262;
+}
+
+.power {
+    margin: 30px 0px 0px 0px;
+    color: gray;
+}
+
+.power span {
+    font-size: 20px;
+    color: rgb(102, 7, 7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+}
+
+
+/* Media Quaries */
+
+@media screen and (max-width:600px) {
+    .maindiv {
+        display: block;
+    }
+
+
+    .navbar {
+        min-width: 100%;
+        height: fit-content;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.8;
+    }
+
+    .Nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .Nav i {
+        display: none;
+    }
+
+    .nav p {
+        font-size: 20px;
+    }
+
+    .navbutton:hover {
+        background-color: white;
+        color: black;
+    }
+
+
+
+    /* Hero Section */
+
+    .content-container {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-section {
+        width: 100%; 
+        margin: auto;
+    }
+
+    .header-container {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .skill-container {
+        width: 90%;
+    }
+
+
+
+    .image-container {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .image-container img {
+        width: 80%;
+    }
+
+
+    /* Skill Container */
+    .skill-container {
+        width: 90%;
+    }
+
+
+    /* Biography */
+    .biography {
+        width: 90%;
+    }
+
+    /* Skill Box */
+    .box-container {
+        background-color: rgb(255, 255, 255);
+        margin: 0px 20px 0px 20px;
+        display: block;
+    }
+
+    .box-container div {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .skillbox {
+        width: 90%;
+    }
+
+    /* My Proce */
+    .myprice {
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .price-container {
+        width: 100%;
+        display: block;
+    }
+
+    .basic {
+        width: 90%;
+        margin: 20px 0px;
+    }
+
+    .pro {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    /* Myphoto */
+    .myphoto {
+        width: 90%;
+    }
+
+    .myphotolist {
+        display: block;
+    }
+
+    .leftphoto,
+    .rightphoto {
+        width: 90%;
+        margin-right: 20px;
+
+    }
+
+    .footer {
+        width: 90%;
+    }
+
+    .location-phone-email p {
+        font-size: 15px;
+    }
+
+    .location-phone-email p i {
+        font-size: 25px;
+    }
+
+
+
+
+}
